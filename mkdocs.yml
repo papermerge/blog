@@ -1,0 +1,14 @@
+site_name: Papermerge Blog
+site_url: https://papermerge.blog
+
+theme:
+  name: material
+  features:
+    - navigation.indexes
+
+nav:
+  - blog/index.md
+
+plugins:
+  - blog
+  - search

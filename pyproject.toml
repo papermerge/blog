@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "blog"
+version = "0.1.0"
+description = "Papermerge blog"
+authors = ["Eugen Ciur <eugen@papermerge.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs = "^1.5.3"
+mkdocs-blog-plugin = "^0.25"
+mkdocs-material = "^9.5.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
