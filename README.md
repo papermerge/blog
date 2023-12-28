@@ -9,3 +9,8 @@ folder run following commands:
 
     $ poetry install
     $ poetry run mkdocs serve
+
+
+## References
+
+- [standalong blog with material](https://squidfunk.github.io/mkdocs-material/blog/2022/09/12/blog-support-just-landed/#creating-a-standalone-blog)

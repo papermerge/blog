@@ -4,11 +4,12 @@ site_url: https://papermerge.blog
 theme:
   name: material
   features:
-    - navigation.indexes
+    - navigation.sections
 
 nav:
-  - blog/index.md
+  - index.md
 
 plugins:
-  - blog
+  - blog:
+      blog_dir: .
   - search
