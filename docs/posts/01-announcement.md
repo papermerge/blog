@@ -10,4 +10,4 @@ tags:
 
 # Papermerge 3.0
 
-This is very first blog entry
+This is very first blog entry.
