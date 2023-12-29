@@ -442,7 +442,30 @@
   </header>
   <div class="md-post__content md-typeset">
     <h2 id="papermerge-30"><a class="toclink" href="2023/12/29/papermerge-30/">Papermerge 3.0</a></h2>
-<p>This is very first blog entry.</p>
+<p>I am very excited to announce the release of Papermerge DMS 3.0.</p>
+<p>Comparatively to all previous releases, version 3.0 underwent serious
+architectural changes. I won't bore reader with all technical details, I will
+just briefly mention two biggest technical changes:</p>
+<ul>
+<li>frontend rewritten in TS/React</li>
+<li>REST API now served with FastAPI</li>
+</ul>
+<p>Also, the format of storing files on the disk differs from previous versions -
+alone this fact makes version 3.0 incompatible with all previous releases.</p>
+<p>Here is the list of exciting features that version 3.0 brings:</p>
+<ul>
+<li>support for jpeg/png/tiff formats is back</li>
+<li>full text search is now backed up by Solr search engine</li>
+<li>multiple authentication backends are supported e.g. oauth2.0/OIDC (not documented yet)</li>
+<li>well documented REST API</li>
+<li>dual panel mode</li>
+<li>page management - delete, reorder, rotate, merge, move pages between documents</li>
+<li>OCR with text overlay (thanks to <a href="https://github.com/ocrmypdf/OCRmyPDF">OCRMyPDF</a>)</li>
+</ul>
+<p>Go to <a href="https://docs.papermerge.io/3.0/">3.0 documentation</a> and play
+with <a href="https://docs.papermerge.io/3.0/setup/docker-compose/">docker compose setup</a>.
+Also, for production deployment on remote server there <a href="https://docs.papermerge.io/3.0/setup/ansible/">Ansible playbook</a> available as well.</p>
+<p>Enjoy!</p>
     <nav class="md-post__action">
       <a href="2023/12/29/papermerge-30/">
         Continue reading
