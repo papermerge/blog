@@ -1,0 +1,26 @@
+name: Publish Blog
+on:
+  push:
+    branches:
+      - "main"
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: "main"
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - run: |
+          pip install poetry
+          poetry install --no-root
+          git fetch origin gh-pages --depth=1
+          git config user.name ci-bot
+          git config user.email ci-bot@example.com
+          poetry run mkdocs gh-deploy
