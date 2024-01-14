@@ -2,27 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://papermerge.blog/</loc>
-         <lastmod>2023-12-29</lastmod>
+         <lastmod>2024-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://papermerge.blog/2023/12/29/papermerge-30/</loc>
-         <lastmod>2023-12-29</lastmod>
+         <lastmod>2024-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://papermerge.blog/2024/01/14/papermerge-301-release/</loc>
+         <lastmod>2024-01-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://papermerge.blog/archive/2024/</loc>
+         <lastmod>2024-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://papermerge.blog/archive/2023/</loc>
-         <lastmod>2023-12-29</lastmod>
+         <lastmod>2024-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://papermerge.blog/category/announcement/</loc>
-         <lastmod>2023-12-29</lastmod>
+         <lastmod>2024-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://papermerge.blog/category/papermerge3/</loc>
-         <lastmod>2023-12-29</lastmod>
+         <lastmod>2024-01-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

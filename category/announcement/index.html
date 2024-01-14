@@ -257,6 +257,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
       <a href="../../archive/2023/" class="md-nav__link">
         
   
@@ -417,6 +440,56 @@
       <header class="md-typeset">
         <h1 id="announcement">announcement</h1>
       </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-01-14 00:00:00">January 14, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="./" class="md-meta__link">announcement</a>, 
+              <a href="../papermerge3/" class="md-meta__link">papermerge3</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="papermerge-301-release"><a class="toclink" href="../../2024/01/14/papermerge-301-release/">Papermerge 3.0.1 Release</a></h2>
+<p>I am happy to announce the release of <a href="https://github.com/papermerge/papermerge-core/releases/tag/3.0.1">version 3.0.1</a>.</p>
+<p>Among other things, this release fixes major issue related to
+<a href="https://github.com/ciur/papermerge/issues/575">DB connections</a>.
+Let me provide short description of the problem.
+The access to specific REST API endpoints was leaving DB connection open. The
+problem is that open DB connection were accumulating up to the point
+(which depends on specific DB configuration) when DB was refusing to accept
+more DB connections, which resulted of course to the whole app going
+offline.</p>
+<p>The root course of the problem is Django ORM and the way it handles DB
+connections. To mitigate the issue, we've decided start moving away from
+Django ORM to SQLAlchemy. Of course full transition to new ORM will span many
+releases, but the main point here is that for end users this transition is
+fully opaque.</p>
+    <nav class="md-post__action">
+      <a href="../../2024/01/14/papermerge-301-release/">
+        Continue reading
+      </a>
+    </nav>
+  </div>
+</article>
       
         <article class="md-post md-post--excerpt">
   <header class="md-post__header">
