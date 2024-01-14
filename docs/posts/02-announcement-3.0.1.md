@@ -2,11 +2,8 @@
 date: 2024-01-14
 categories:
   - announcement
-  - papermerge3
 tags:
-  - papermerge3
   - announcement
-  - 3.0
 ---
 
 # Papermerge 3.0.1 Release
