@@ -1,3 +1,3 @@
 # Papermerge Blog
 
-You'll find on this page news, announcements and blog posts about Papermerge DMS
+News, announcements and articles related to Papermerge and document management in general
