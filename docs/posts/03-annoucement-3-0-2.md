@@ -6,7 +6,7 @@ tags:
   - announcement
 ---
 
-# Papermerge 3.0.2 Release
+# 3.0.2 Release
 
 Release 3.0.2 is a minor release which contains only bug fixes:
 
