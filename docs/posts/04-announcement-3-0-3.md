@@ -6,7 +6,7 @@ tags:
   - announcement
 ---
 
-# 3.0.3 Release
+# [3.0.3 Release](https://github.com/papermerge/papermerge-core/releases/tag/3.0.3)
 
 Release 3.0.3 is a minor release which contains mostly bug fixes:
 
