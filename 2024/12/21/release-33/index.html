@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://papermerge.blog/2024/11/28/lets-play-with-release-33/">
+        <link rel="canonical" href="https://papermerge.blog/2024/12/21/release-33/">
       
       
-        <link rel="prev" href="../../../10/10/updates/">
+        <link rel="prev" href="../../../11/28/lets-play-with-release-33/">
       
-      
-        <link rel="next" href="../../../12/21/release-33/">
       
       
       <link rel="icon" href="../../../../assets/favicon.ico">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Let's Play With Release 3.3! - Papermerge Blog</title>
+        <title>Release 3.3 - Papermerge Blog</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lets-play-with-release-33" class="md-skip">
+        <a href="#release-33" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Let's Play With Release 3.3!
+              Release 3.3
             
           </span>
         </div>
@@ -476,7 +474,7 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2024-11-28 00:00:00+00:00" class="md-ellipsis">November 28, 2024</time>
+                        <time datetime="2024-12-21 00:00:00+00:00" class="md-ellipsis">December 21, 2024</time>
                       </div>
                     </li>
                     
@@ -508,40 +506,23 @@
         
 
 
-<h1 id="lets-play-with-release-33">Let's Play With Release 3.3!</h1>
-<p>We are testing ferociously version of 3.3. It will take some until we
-hunt down major bugs.</p>
-<p>You can help! Start messing around with it right now. See how it feels like!
-Open bugs, report issues with documentation. Give us feedback.</p>
-<p>Start docker container with basic webapp using following command:</p>
-<!-- more -->
-
-<pre><code class="language-shell">docker run -p 12000:80 \
+<h1 id="release-33">Release 3.3</h1>
+<p>Release 3.3 is out 🎉 🎉 🎉!</p>
+<p>Check latest <a href="https://docs.papermerge.io/3.3/setup/docker-compose/#ocr-worker-s3">docker compose setup documentation</a>,
+there are new sections which include setup examples with S3 Object storage.
+There is also an example with SOLR search setup.</p>
+<p>To start very basic setup use following command:</p>
+<pre><code class="language-shell">docker run -p 2025:80 \
     -e PAPERMERGE__SECURITY__SECRET_KEY=abc \
-    -e PAPERMERGE__AUTH__PASSWORD=pass123 \
-    papermerge/papermerge:3.3b16
+    -e PAPERMERGE__AUTH__PASSWORD=happy2025 \
+    papermerge/papermerge:3.3
 </code></pre>
 <ul>
 <li>Username: <code>admin</code></li>
-<li>Password: <code>pass123</code></li>
-<li>URL: <code>http://localhost:12000</code></li>
+<li>Password: <code>happy2025</code></li>
+<li>URL: <code>http://localhost:2025</code></li>
 </ul>
-<p><img alt="Preview of 3.3 beta" src="../../../../08-play-with-3.3/papermerge-3.3.gif" /></p>
-<p>As of writing this post, the latest docker image is <code>3.3b16</code>. But that may change.
-Check latest image version <a href="https://github.com/papermerge/papermerge-core/tags">on github repository tags</a>
-or directly on <a href="https://hub.docker.com/r/papermerge/papermerge/tags">docker hub</a>.</p>
-<p>Documentation has new sections:</p>
-<ul>
-<li><a href="https://docs.papermerge.io/3.3/user/document-types/">Document Types</a></li>
-<li><a href="https://docs.papermerge.io/3.3/user/custom-fields/">Custom Fields</a></li>
-<li><a href="https://docs.papermerge.io/3.3/user/path-templates/">Path Templates</a></li>
-</ul>
-<p>Check <a href="https://docs.papermerge.io/3.3/setup/docker-compose/">docker compose</a> section for how to start
-application locally.</p>
-<ul>
-<li>Found a problem? Open <a href="https://github.com/ciur/papermerge/issues">a ticket on github</a>.</li>
-<li>Feedback? Start a <a href="https://github.com/ciur/papermerge/discussions">discussions on github</a>.</li>
-</ul>
+<p>Happy new year 🎉 🎉 🎉!</p>
 
 
 
