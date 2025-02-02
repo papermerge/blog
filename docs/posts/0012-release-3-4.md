@@ -14,7 +14,7 @@ Release [3.4](https://github.com/papermerge/papermerge-core/releases/tag/3.4) is
 
 ## What's Next?
 
-With release 3.4 shipped out here is rough plan of what is going to happen next.
+Here is rough plan of what is going to happen next.
 First of all, we will update documentation and publish couple of videos with new features.
 
 There are people using 2.0 and 2.1 versions.
