@@ -491,6 +491,53 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2025-09-13 00:00:00+00:00">September 13, 2025</time></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="database-support"><a class="toclink" href="../../2025/09/13/database-support/">Database Support</a></h2>
+<p>Starting with version 3.6, Papermerge <strong>will support only PostgreSQL</strong>. Support for
+all other databases — such as SQLite, MariaDB, etc. — will be dropped.</p>
+<p>This may seem like a sudden decision, but it isn’t. It’s the result of years of
+careful thought and experience.</p>
+<p>So, why just PostgreSQL?</p>
+<p>When an application commits to supporting multiple databases, there’s an
+unavoidable limitation: it can only use the features that all supported
+databases share. That “lowest common denominator” is surprisingly small.</p>
+<p>Take SQLite, for example. By design, it’s lite. Supporting it means restricting
+Papermerge to a very limited subset of SQL features. For instance, SQLite lacks
+native support for fundamental types like UUID and JSON.</p>
+<p>Even when comparing more feature-rich systems like PostgreSQL and MariaDB, the
+issue persists. Each database is a different implementation. For developers,
+this translates into significantly more complexity: every new feature must be
+written, tested, and maintained across multiple engines—multiplying the workload
+without adding real value.</p>
+<p>With version 3.6, Papermerge is embracing PostgreSQL as its database of choice.
+Development is already making use of PostgreSQL-specific functionality. For
+example, the audit feature relies on triggers written in plpgsql.</p>
+<p>To put it plainly:</p>
+<p><strong>Starting with Papermerge 3.6, PostgreSQL will be the only supported database.</strong></p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2025-05-01 00:00:00+00:00">May 1, 2025</time></li>
         
         

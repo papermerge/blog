@@ -488,6 +488,53 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2025-09-13 00:00:00+00:00">September 13, 2025</time></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="database-support"><a class="toclink" href="2025/09/13/database-support/">Database Support</a></h2>
+<p>Starting with version 3.6, Papermerge <strong>will support only PostgreSQL</strong>. Support for
+all other databases — such as SQLite, MariaDB, etc. — will be dropped.</p>
+<p>This may seem like a sudden decision, but it isn’t. It’s the result of years of
+careful thought and experience.</p>
+<p>So, why just PostgreSQL?</p>
+<p>When an application commits to supporting multiple databases, there’s an
+unavoidable limitation: it can only use the features that all supported
+databases share. That “lowest common denominator” is surprisingly small.</p>
+<p>Take SQLite, for example. By design, it’s lite. Supporting it means restricting
+Papermerge to a very limited subset of SQL features. For instance, SQLite lacks
+native support for fundamental types like UUID and JSON.</p>
+<p>Even when comparing more feature-rich systems like PostgreSQL and MariaDB, the
+issue persists. Each database is a different implementation. For developers,
+this translates into significantly more complexity: every new feature must be
+written, tested, and maintained across multiple engines—multiplying the workload
+without adding real value.</p>
+<p>With version 3.6, Papermerge is embracing PostgreSQL as its database of choice.
+Development is already making use of PostgreSQL-specific functionality. For
+example, the audit feature relies on triggers written in plpgsql.</p>
+<p>To put it plainly:</p>
+<p><strong>Starting with Papermerge 3.6, PostgreSQL will be the only supported database.</strong></p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2025-05-01 00:00:00+00:00">May 1, 2025</time></li>
         
         
@@ -881,45 +928,6 @@ User" header. Remote user authentication was tested with Authelia.</p>
 <h3 id="adds"><a class="toclink" href="2024/02/02/303-release/#adds">Adds</a></h3>
 <ul>
 <li>[UI] Context Missing "Extract Pages" entry <a href="https://github.com/ciur/papermerge/issues/564">Issue#564</a></li>
-</ul>
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-01-21 00:00:00+00:00">January 21, 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/announcement/" class="md-meta__link">announcement</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="302-release"><a class="toclink" href="2024/01/21/302-release/">3.0.2 Release</a></h2>
-<p>Release 3.0.2 is a minor release which contains only bug fixes:</p>
-<ul>
-<li>Fix create_user to work with MySql/MariaDB/sqlite3 <a href="https://github.com/ciur/papermerge/issues/579">Issue#579</a></li>
-<li>Fix Error / Internal Server Error <a href="https://github.com/ciur/papermerge/issues/581">Issue#581</a></li>
-<li>Fix Error thrown after successful login <a href="https://github.com/papermerge/papermerge-core/issues/307">Issue#307</a></li>
-<li>Fix wrong download URL for document version in viewer</li>
-<li>Fix nodes pagination (num_pages int rounded up instead of down)</li>
 </ul>
     
   </div>
