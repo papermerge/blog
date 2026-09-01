@@ -1,0 +1,57 @@
+---
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "./BaseLayout.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+
+type Props = CollectionEntry<"blog">["data"];
+
+const { title, description, pubDate, updatedDate, tags, heroImage } =
+  Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <article class="post">
+    <header class="post__header">
+      <h1>{title}</h1>
+      <p class="post__meta">
+        <FormattedDate date={pubDate} />
+        {
+          updatedDate && (
+            <span>
+              {" "}
+              &middot; updated <FormattedDate date={updatedDate} />
+            </span>
+          )
+        }
+      </p>
+      {
+        tags.length > 0 && (
+          <p class="post__tags">
+            {tags.map((tag) => (
+              <a href={`/tags/${tag}/`}>#{tag}</a>
+            ))}
+          </p>
+        )
+      }
+    </header>
+
+    {
+      heroImage && (
+        <Image
+          class="post__hero"
+          src={heroImage}
+          alt=""
+          widths={[480, 800, 1200]}
+          sizes="(max-width: 46rem) 100vw, 46rem"
+        />
+      )
+    }
+
+    <div class="prose">
+      <slot />
+    </div>
+  </article>
+
+  <p class="back-link"><a href="/">&larr; All posts</a></p>
+</BaseLayout>

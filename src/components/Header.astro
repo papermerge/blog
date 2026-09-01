@@ -1,0 +1,59 @@
+---
+import { SITE_TITLE } from "../consts";
+---
+
+<header class="site-header">
+  <nav class="site-header__inner">
+    <a href="/" class="brand">
+      <img src="/logo.svg" width="26" height="29" alt="" />
+      <span>{SITE_TITLE}</span>
+    </a>
+    <div class="site-header__links">
+      <a href="/">Blog</a>
+      <a href="/tags/">Tags</a>
+      <a href="https://papermerge.com">papermerge.com</a>
+    </div>
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    border-bottom: 1px solid var(--pm-hairline);
+  }
+
+  .site-header__inner {
+    max-width: var(--pm-content-width);
+    margin: 0 auto;
+    padding: 1rem var(--pm-pad-x);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-weight: 600;
+    color: var(--pm-text);
+    text-decoration: none;
+  }
+
+  .site-header__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.925rem;
+  }
+
+  .site-header__links a {
+    color: var(--pm-text-muted);
+    text-decoration: none;
+  }
+
+  .site-header__links a:hover {
+    color: var(--pm-accent);
+  }
+</style>

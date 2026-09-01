@@ -1,0 +1,43 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span>&copy; {year} Papermerge</span>
+    <span aria-hidden="true">&middot;</span>
+    <a href="https://papermerge.com">papermerge.com</a>
+    <span aria-hidden="true">&middot;</span>
+    <a href="https://docs.papermerge.com">Docs</a>
+    <span aria-hidden="true">&middot;</span>
+    <a href="/rss.xml">RSS</a>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid var(--pm-hairline);
+    margin-top: 4rem;
+  }
+
+  .site-footer__inner {
+    max-width: var(--pm-content-width);
+    margin: 0 auto;
+    padding: 1.25rem var(--pm-pad-x);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--pm-text-muted);
+  }
+
+  .site-footer__inner a {
+    color: var(--pm-text-muted);
+    text-decoration: none;
+  }
+
+  .site-footer__inner a:hover {
+    color: var(--pm-accent);
+  }
+</style>

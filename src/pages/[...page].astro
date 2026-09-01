@@ -1,0 +1,31 @@
+---
+import type { GetStaticPaths, Page } from "astro";
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PostList from "../components/PostList.astro";
+import { SITE_TITLE, SITE_DESCRIPTION, POSTS_PER_PAGE } from "../consts";
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const posts = (await getCollection("blog", ({ data }) => !data.draft)).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+  );
+  return paginate(posts, { pageSize: POSTS_PER_PAGE });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props as { page: Page<CollectionEntry<"blog">> };
+---
+
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <PostList posts={page.data} />
+
+  {
+    (page.url.prev || page.url.next) && (
+      <nav class="pagination">
+        {page.url.prev ? <a href={page.url.prev}>&larr; Newer</a> : <span />}
+        <span>Page {page.currentPage} of {page.lastPage}</span>
+        {page.url.next ? <a href={page.url.next}>Older &rarr;</a> : <span />}
+      </nav>
+    )
+  }
+</BaseLayout>
