@@ -23,9 +23,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: yarn
 
+      # Corepack activates the Yarn version pinned in package.json
+      # ("packageManager"). It must run before any `yarn` call.
       - run: corepack enable
+
       - run: yarn install --immutable
 
       - uses: actions/configure-pages@v4
