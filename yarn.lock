@@ -2950,9 +2950,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"papermerge-blog@workspace:.":
+"papermerge-news@workspace:.":
   version: 0.0.0-use.local
-  resolution: "papermerge-blog@workspace:."
+  resolution: "papermerge-news@workspace:."
   dependencies:
     "@astrojs/rss": "npm:^4.0.19"
     "@astrojs/sitemap": "npm:^3.7.3"

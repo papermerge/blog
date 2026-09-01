@@ -7,13 +7,13 @@ import PostList from "../components/PostList.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, POSTS_PER_PAGE } from "../consts";
 
 export const getStaticPaths = (async ({ paginate }) => {
-  const posts = (await getCollection("blog", ({ data }) => !data.draft)).sort(
+  const posts = (await getCollection("news", ({ data }) => !data.draft)).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
   );
   return paginate(posts, { pageSize: POSTS_PER_PAGE });
 }) satisfies GetStaticPaths;
 
-const { page } = Astro.props as { page: Page<CollectionEntry<"blog">> };
+const { page } = Astro.props as { page: Page<CollectionEntry<"news">> };
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>

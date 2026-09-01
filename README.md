@@ -1,7 +1,8 @@
-# Papermerge Blog
+# Papermerge News
 
-News and announcements about Papermerge, built with [Astro](https://astro.build/)
-and published to GitHub Pages at <https://www.papermerge.blog>.
+Announcements and product updates for Papermerge, built with
+[Astro](https://astro.build/) and published to GitHub Pages at
+<https://www.papermerge.blog>.
 
 ## Develop
 
@@ -22,8 +23,8 @@ yarn preview    # serve the production build locally
 
 ## Writing a post
 
-Add a Markdown file to `src/content/blog/`. The file name becomes the URL slug
-(`src/content/blog/my-post.md` → `/blog/my-post/`).
+Add a Markdown file to `src/content/news/`. The file name becomes the URL slug
+(`src/content/news/my-post.md` → `/news/my-post/`).
 
 ```markdown
 ---

@@ -1,10 +1,10 @@
 import { glob } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
 
-const blog = defineCollection({
-  // Load Markdown / MDX files in `src/content/blog/`, ignoring files
+const news = defineCollection({
+  // Load Markdown / MDX files in `src/content/news/`, ignoring files
   // whose name starts with `_` (drafts / partials).
-  loader: glob({ base: "./src/content/blog", pattern: "**/[^_]*.{md,mdx}" }),
+  loader: glob({ base: "./src/content/news", pattern: "**/[^_]*.{md,mdx}" }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
@@ -17,4 +17,4 @@ const blog = defineCollection({
     }),
 });
 
-export const collections = { blog };
+export const collections = { news };

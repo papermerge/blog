@@ -6,7 +6,7 @@ import PostList from "../../components/PostList.astro";
 import { SITE_TITLE } from "../../consts";
 
 export const getStaticPaths = (async () => {
-  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  const posts = await getCollection("news", ({ data }) => !data.draft);
   const tags = [...new Set(posts.flatMap((post) => post.data.tags))];
 
   return tags.map((tag) => ({
