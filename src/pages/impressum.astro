@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE } from "../consts";
+---
+
+<BaseLayout
+  title={`Impressum · ${SITE_TITLE}`}
+  description="Impressum / legal notice for the Papermerge blog."
+>
+  <article class="prose">
+    <h1>Impressum</h1>
+
+    <h2>Angaben gemäß § 5 DDG</h2>
+    <p>
+      Eugen Ciur<br />
+      Trusetaler Straße 90<br />
+      12687 Berlin<br />
+      Deutschland
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      E-Mail: <a href="mailto:eugen@papermerge.com">eugen@papermerge.com</a>
+    </p>
+
+    <h3>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
+    <p>Eugen Ciur, Anschrift wie oben</p>
+  </article>
+
+  <p class="back-link"><a href="/">&larr; Back to the blog</a></p>
+</BaseLayout>

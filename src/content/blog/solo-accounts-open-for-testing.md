@@ -1,33 +1,32 @@
 ---
 title: "Solo accounts are open for testing"
-description: "Papermerge Cloud is entering private beta. You can now request a solo account and help shape the product."
+description: "Papermerge Cloud is in open testing. Solo accounts — for individual users — are available now; team accounts come later."
 pubDate: 2026-09-01
 tags:
   - announcement
   - beta
 ---
 
-I'm happy to announce that **Papermerge Cloud** is now open for testing.
+I am happy to announce that **Papermerge Cloud** is now open for testing.
 
-Over the past months Papermerge has moved to a hosted, cloud-first product.
-This version has diverged from the open-source edition: it is a separate
-codebase, focused on being a reliable, low-maintenance document management
-service that you don't have to host yourself.
+For now only **solo accounts** are available. A solo account is for a single
+user, aimed at individuals and private users — freelancers, for example. With
+it you can upload and work with documents and configure metadata, categories
+and retention settings.
 
-## What a solo account gives you
+Even if you are ultimately interested in a **team account** (for groups of two
+or more people), I'd encourage you to start with a solo account. The goal at
+this stage is to see whether the UI, the concepts and the overall workflow feel
+right to you.
 
-- A private workspace at `app.papermerge.com`
-- Upload, organize and search your documents
-- Categories, metadata and tags
-- Document versioning and retention rules
+## How to sign up
 
-## How to join
+Go to [app.papermerge.com](https://app.papermerge.com) — also linked from
+[papermerge.com](https://papermerge.com). All you need to create an account is
+an email address; you can also sign in with Google.
 
-The beta is invite-based for now. If you'd like a solo account, send a short
-email to **hello@papermerge.com** and I'll enable one for you.
-
-This is an early beta, so expect rough edges — and please report anything that
-looks wrong. Your feedback at this stage has an outsized impact on where the
-product goes next.
+This is early-stage testing, so expect rough edges — and please report anything
+that looks off. Feedback now has an outsized impact on where the product goes
+next.
 
 — Eugen

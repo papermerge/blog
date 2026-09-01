@@ -1,16 +1,33 @@
 ---
 const year = new Date().getFullYear();
+
+const links = [
+  { label: "papermerge.com", href: "https://papermerge.com" },
+  { label: "Docs", href: "https://docs.papermerge.com", external: true },
+  { label: "YouTube", href: "https://www.youtube.com/@papermerge", external: true },
+  { label: "RSS", href: "/rss.xml" },
+  { label: "Impressum", href: "/impressum/" },
+  { label: "Privacy", href: "/privacy/" },
+];
 ---
 
 <footer class="site-footer">
   <div class="site-footer__inner">
-    <span>&copy; {year} Papermerge</span>
-    <span aria-hidden="true">&middot;</span>
-    <a href="https://papermerge.com">papermerge.com</a>
-    <span aria-hidden="true">&middot;</span>
-    <a href="https://docs.papermerge.com">Docs</a>
-    <span aria-hidden="true">&middot;</span>
-    <a href="/rss.xml">RSS</a>
+    <nav class="site-footer__links">
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            {...link.external
+              ? { target: "_blank", rel: "noopener noreferrer" }
+              : {}}
+          >
+            {link.label}
+          </a>
+        ))
+      }
+    </nav>
+    <p class="site-footer__copy">&copy; {year} Papermerge</p>
   </div>
 </footer>
 
@@ -23,21 +40,34 @@ const year = new Date().getFullYear();
   .site-footer__inner {
     max-width: var(--pm-content-width);
     margin: 0 auto;
-    padding: 1.25rem var(--pm-pad-x);
+    padding: 1.5rem var(--pm-pad-x) 2rem;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 0.9rem;
-    color: var(--pm-text-muted);
+    gap: 0.75rem;
+    text-align: center;
   }
 
-  .site-footer__inner a {
+  .site-footer__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .site-footer__links a {
     color: var(--pm-text-muted);
     text-decoration: none;
   }
 
-  .site-footer__inner a:hover {
+  .site-footer__links a:hover {
     color: var(--pm-accent);
+  }
+
+  .site-footer__copy {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--pm-text-muted);
   }
 </style>

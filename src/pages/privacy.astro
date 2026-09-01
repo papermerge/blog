@@ -1,0 +1,69 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE } from "../consts";
+---
+
+<BaseLayout
+  title={`Privacy · ${SITE_TITLE}`}
+  description="Privacy notice for the Papermerge blog."
+>
+  <article class="prose">
+    <h1>Privacy Notice</h1>
+
+    <p>
+      This notice covers <strong>www.papermerge.blog</strong> only. The Papermerge
+      application (<code>app.papermerge.com</code>) and the main website
+      (<code>papermerge.com</code>) have their own privacy policies.
+    </p>
+
+    <h2>Controller</h2>
+    <p>
+      Eugen Ciur, Trusetaler Straße 90, 12687 Berlin, Germany<br />
+      E-mail: <a href="mailto:eugen@papermerge.com">eugen@papermerge.com</a>
+    </p>
+
+    <h2>Hosting and server logs</h2>
+    <p>
+      This blog is a set of static files hosted on <strong>GitHub Pages</strong>,
+      a service of GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA
+      94107, USA. When you open a page, your browser necessarily transmits your
+      IP address and request metadata (requested URL, timestamp, referrer, user
+      agent) to GitHub, which may process this data in server logs to deliver the
+      content and protect the service against attacks.
+    </p>
+    <p>
+      Legal basis: Art. 6(1)(f) GDPR (legitimate interest in operating a secure,
+      functioning website). This processing involves a transfer to the USA;
+      GitHub provides appropriate safeguards through EU Standard Contractual
+      Clauses. See GitHub's
+      <a
+        href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement"
+        target="_blank"
+        rel="noopener noreferrer">privacy statement</a
+      >.
+    </p>
+
+    <h2>No cookies, no tracking</h2>
+    <p>
+      This blog sets no cookies and uses no analytics, tracking, advertising, or
+      third-party embeds. It loads no external fonts or scripts. There are no
+      contact forms or user accounts. The RSS feed is a static file; subscribing
+      happens in your feed reader and is not recorded here.
+    </p>
+
+    <h2>Your rights</h2>
+    <p>
+      You have the right to access, rectification, erasure, restriction of
+      processing, and objection, and the right to lodge a complaint with a
+      supervisory authority — for Berlin, the
+      <a
+        href="https://www.datenschutz-berlin.de/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Berliner Beauftragte für Datenschutz und Informationsfreiheit</a
+      >.
+    </p>
+  </article>
+
+  <p class="back-link"><a href="/">&larr; Back to the blog</a></p>
+</BaseLayout>
